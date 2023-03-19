@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>第一步 问题描述 | 二部图匹配问题</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/icon.png">
+    <meta name="description" content="
+1.1 二维图像模式匹配介绍
+在计算机科学中，二维图模式匹配问题（2D pattern matching）是指在一个二维的文本图像中查找一个给定的模式图像是否存在的问题。在这个问题中，文本图像被表示为一个二维矩阵，而模式图像同样也被表示为一个二维矩阵。该问题在计算机视觉、图像处理、模式识别等领域中有着广泛的应用，如人脸识别、指纹识别、图像检索等
+
+<p ...">
+    
+    <link rel="preload" href="/assets/css/0.styles.89d4bfde.css" as="style"><link rel="preload" href="/assets/js/app.1f9378fb.js" as="script"><link rel="preload" href="/assets/js/8.9f52973d.js" as="script"><link rel="preload" href="/assets/js/1.18b62edd.js" as="script"><link rel="preload" href="/assets/js/17.dfe323db.js" as="script"><link rel="prefetch" href="/assets/js/10.fd6e0161.js"><link rel="prefetch" href="/assets/js/11.898bad9c.js"><link rel="prefetch" href="/assets/js/12.9af03c2d.js"><link rel="prefetch" href="/assets/js/13.c5677648.js"><link rel="prefetch" href="/assets/js/14.f80d73c6.js"><link rel="prefetch" href="/assets/js/15.f1149013.js"><link rel="prefetch" href="/assets/js/16.3dc4f347.js"><link rel="prefetch" href="/assets/js/18.e309baa8.js"><link rel="prefetch" href="/assets/js/4.b9d64d88.js"><link rel="prefetch" href="/assets/js/5.beda1d84.js"><link rel="prefetch" href="/assets/js/6.c1bc7eb1.js"><link rel="prefetch" href="/assets/js/7.80a886e6.js"><link rel="prefetch" href="/assets/js/9.3e899961.js"><link rel="prefetch" href="/assets/js/vuejs-paginate.456622f9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.89d4bfde.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/" class="nav-link home-link">二部图匹配问题 </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/en/" class="nav-link router-link-active">Blog</a></li><li class="nav-item"><a href="https://github.com/Nathanstefanqian" target="_blank" rel="noopener noreferrer" class="nav-link external">Github</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/" class="nav-link mobile-home-link">二部图匹配问题 </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/en/" class="nav-link router-link-active">Blog</a></li><li class="mobile-nav-item"><a href="https://github.com/Nathanstefanqian" target="_blank" rel="noopener noreferrer" class="nav-link external">Github</a></li> <li class="mobile-nav-item"><!----></li></ul></div></div></div> <div class="content-wrapper"><div id="vuepress-theme-blog__post-layout"><article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        第一步 问题描述
+      </h1> <div class="post-meta"><div itemprop="publisher author" itemtype="http://schema.org/Person" itemscope="itemscope" class="post-meta-author"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg> <span itemprop="name">Nathan Q</span> <span itemprop="address">   in Nantong</span></div> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2023-3-18">
+      Sat Mar 18 2023
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-42ccfcd5><a href="/tag/blog" data-v-42ccfcd5><span data-v-42ccfcd5>blog</span></a></li><li class="post-tag" data-v-42ccfcd5><a href="/tag/problem describe" data-v-42ccfcd5><span data-v-42ccfcd5>problem describe</span></a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><h2 id="_1-1-二维图像模式匹配介绍"><a href="#_1-1-二维图像模式匹配介绍" class="header-anchor">#</a> 1.1 二维图像模式匹配介绍</h2> <p>在计算机科学中，二维图模式匹配问题（2D pattern matching）是指在一个二维的文本图像中查找一个给定的模式图像是否存在的问题。在这个问题中，文本图像被表示为一个二维矩阵，而模式图像同样也被表示为一个二维矩阵。该问题在计算机视觉、图像处理、模式识别等领域中有着广泛的应用，如人脸识别、指纹识别、图像检索等</p><p></p><p>例如，在给定图1（a）所示的二维文本图像中查找特定的模式图像图1（b），主要处理的过程为：首先把二维文本图像和给定的模式图像转换为二维矩阵，对图像中的每一个像素点采样，得到对应的采样值，存储为二维矩阵，这样就得到
+二维文本图像和给定的模式图像的二维矩阵形式；然后问题转化为在文本图像表示的大矩阵中查找给定的模式图像的小矩阵，然后选择合适的匹配算法进行查找匹配。</p><p></p><div class="my-pic"><div class="my-pic-box"><img src="/pic1.png" style="width:370px;"> <span>图1(a)文本图像</span></div> <div class="my-pic-box"><img src="/pic2.png" style="width:50px;"> <span>图1(b)模式图像</span></div></div> <p>因此，二维图像模式匹配的关键问题在于设计合适的匹配算法。在处理大规模图像时，匹配算法需要能够高效地处理大量数据，并且需要考虑存储和计算的问题。如何设计高效的算法和数据结构，以提高匹配的速度和可扩展性，是一个重要的问题。</p> <h2 id="_1-2-问题简化"><a href="#_1-2-问题简化" class="header-anchor">#</a> 1.2 问题简化</h2> <p>为了更加清楚说明二维图像模式匹配算法问题，对问题进行简化，即假设图像的每一个像素点只有黑白像素两种颜色，在二维矩阵中用0表示黑色，用1表示白色。对于更多种颜色的二维图像也很容易扩展类比。</p> <p>因此，对于二维图模式匹配的算法研究可以简化表述为：现有如图2（a）所示的文本矩阵和如图2（b）所示的模式矩阵，现在需要在文本矩阵中查找是否存在和模式矩阵相同的子矩阵，如果找到则成功，否则失败。因此，问题关键在于查找算法的设计。</p> <div class="my-pic"><div class="my-pic-box"><img src="/pic3.png" style="width:130px;"> <span>图2(a)文本图像的二维矩阵</span></div> <div class="my-pic-box"><img src="/pic4.png" style="width:90px;"> <span>图2(b)模式图像的二维矩阵</span></div></div> <h2 id="下一篇"><a href="#下一篇" class="header-anchor">#</a> 下一篇</h2> <ul><li><a href="/_en/new2.html">第二章 研究现状</a> <style>
+p{
+text-indent: 2em;
+}
+.my-pic{
+display:flex;
+width:100%;
+height: 240px;
+}
+.my-pic-box{
+width:50%;
+display:flex;
+flex-direction: column;
+align-items: center;
+align-self: flex-end;
+}
+</style></li></ul></div> <footer><!----> <hr> <!----></footer></article> <div class="sticker vuepress-toc"><div class="vuepress-toc-item vuepress-toc-h2 active"><a href="#_1-1-二维图像模式匹配介绍" title="1.1 二维图像模式匹配介绍">1.1 二维图像模式匹配介绍</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#_1-2-问题简化" title="1.2 问题简化">1.2 问题简化</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#下一篇" title="下一篇">下一篇</a></div></div></div></div> <footer class="footer" data-v-fdbf4940><div class="footer-left-wrap" data-v-fdbf4940><ul class="contact" data-v-fdbf4940><li class="contact-item" data-v-fdbf4940><a href="https://github.com/Nathanstefanqian" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github" data-v-fdbf4940><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" data-v-fdbf4940></path></svg>
+          
+        </a></li><li class="contact-item" data-v-fdbf4940><a href="mailto: 1532722889@qq.com" class="nav-link external" data-v-fdbf4940><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail" data-v-fdbf4940><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" data-v-fdbf4940></path><polyline points="22,6 12,13 2,6" data-v-fdbf4940></polyline></svg>
+          
+        </a></li></ul></div> <div class="footer-right-wrap" data-v-fdbf4940><ul class="copyright" data-v-fdbf4940><li class="copyright-item" data-v-fdbf4940><a href="/en/2023/03/18/new/.html" class="nav-link" data-v-fdbf4940>Nathan Qian © 2023</a></li></ul></div></footer></div><div class="global-ui"><canvas id="vuepress-canvas-cursor"></canvas></div></div>
+    <script src="/assets/js/app.1f9378fb.js" defer></script><script src="/assets/js/8.9f52973d.js" defer></script><script src="/assets/js/1.18b62edd.js" defer></script><script src="/assets/js/17.dfe323db.js" defer></script>
+  </body>
+</html>
